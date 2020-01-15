@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sunrin-Dust</title>
+        <script>
+            function initialize() {
+                var size_x = 30; 
+                var size_y = 30;
+              }
+        </script>
+        <style>
+            @media (max-width: 899px){
+                html, body{margin: 0px; padding: 0px; height: 100%; background-color:#F6F6F6; text-align: center; font-family: "Nanum Gothic", sans-serif;}
+                #Titleid{width: 100%}
+                #margin7{margin: 0%};
+            }
+            @media (min-width: 900px){
+                html, body{margin: 0px; padding: 0px; height: 100%; background-color:#F6F6F6; text-align: center; font-family: "Nanum Gothic", sans-serif;}
+                #Titleid{width: 80%}
+                #margin7{margin: 0%};
+            }
+        </style>
+    </head>
+    <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false' >
+        <img src="src/Title.png" id="Titleid">
+        <p id="margin7"><h1>미세먼지 등급</h1></p>
+        <img src="src/Level.PNG" width="100%">
+        <nav class="nav">
+            <br><br>
+        </nav>
+                <div style="margin:10%"></div>
+            <fieldset>
+                <legend style="text-align: left"><h2>미세먼지 / 초미세먼지</h2></legend>
+            <div>
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/358487/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=600&title=PM10&type=line">미세먼지(PM10)</iframe><br>
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/358487/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=600&title=PM2.5&type=line">초미세먼지(PM2.5)</iframe>
+            </div>
+        </fieldset>
+            <br>
+            <div style="margin:5%"></div>
+            <fieldset>
+                <legend style="text-align: left"><h2>온도 / 습도</h2></legend>
+            <div>
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/358487/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=600&title=%EC%98%A8%EB%8F%84&type=line">온도</iframe><br>
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/358487/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=600&title=%EC%8A%B5%EB%8F%84&type=line">습도</iframe>
+            </div>
+            </fieldset>
+        <footer class="footer">
+        </footer>
+    </body>
+</html>
